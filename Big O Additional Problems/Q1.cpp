@@ -7,3 +7,5 @@ int product(int a, int b) {
 
     return sum;
 }
+
+// The for loop just iterates one time through "b". So runtime = O(b)
