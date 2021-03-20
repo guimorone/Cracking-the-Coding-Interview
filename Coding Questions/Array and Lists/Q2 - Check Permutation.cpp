@@ -63,5 +63,16 @@ bool permutation(string a, string b) {
         countB[i]++;
     }
 
+    /*
+    It also can be done in that way:
+    
+    for(char i : b) {
+        countA--;
+        if(countA < 0) return false;
+    }
+
+    return true;
+    */
+
     return countA == countB;
 }
