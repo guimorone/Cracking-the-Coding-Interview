@@ -64,7 +64,7 @@ int main() {
 
     Time Complexity => O(n) => The for loop just iterates one time through the string.
 
-    Space Complexity => O(1) => The space needed in the "check" array will never be bigger 
+    Space Complexity => O(1) => The space needed in the "check" array will never get bigger 
     than 128.
 */
 
