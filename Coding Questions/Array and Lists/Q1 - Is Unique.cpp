@@ -1,9 +1,9 @@
 /*                                      SOLUTION 1
 
-    Time Complexity => O(n²) => where "n" is the size of the string
-    Both of the for loops in "isUnique" function iterates through the size of the string
+    Time Complexity => O(n²) => where "n" is the size of the string.
+    Both of the for loops in "isUnique" function iterates through the size of the string.
 
-    Space Complexity => O(1) => No additional variables/data structures in the code
+    Space Complexity => O(1) => No additional data structures used.
 */
 
 using namespace std;
@@ -32,13 +32,13 @@ int main() {
 
 /*                                      SOLUTION 2
 
-    Time Complexity => O(n*log n + n) == O(n * log n) => where "n" is the length of the string
-    The for loop in the "isUnique" function just iterates through the string
-    The biggest runtime is in the string sorting
+    Time Complexity => O(n*log n + n) == O(n * log n) => where "n" is the length of the string.
+    The for loop in the "isUnique" function just iterates through the string.
+    The biggest runtime is in the string sorting.
     
-    The space complexity depends on the sorting algorithm
-    Mergesort => O(n)
-    Quicksort (in-place version) => O(log n)
+    The space complexity depends on the sorting algorithm.
+    Mergesort => O(n).
+    Quicksort (in-place version) => O(log n).
 */
 
 using namespace std;
@@ -62,10 +62,10 @@ int main() {
 
 /*                                      SOLUTION 3
 
-    Time Complexity => O(n) => The for loop just iterates one time through the string
+    Time Complexity => O(n) => The for loop just iterates one time through the string.
 
     Space Complexity => O(1) => The space needed in the "check" array will never be bigger 
-    than 128
+    than 128.
 */
 
 using namespace std;

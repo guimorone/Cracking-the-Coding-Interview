@@ -21,7 +21,7 @@ int main() {
     other.
     The runtime just depends on the sorting algorithm.
 
-    The space complexity depends on the sorting algorithm
+    The space complexity depends on the sorting algorithm.
     Mergesort => O(n)
     Quicksort => O(log n)
 */
@@ -46,7 +46,7 @@ bool permutation(string a, string b) {
     other.
 
     Space Complexity => O(1) => The length of the two arrays (countA, countB) will
-    always be the same, i.e, O(128 + 128) == O(1)
+    always be the same, i.e, O(128 + 128) == O(1).
 */
 
 bool permutation(string a, string b) {
