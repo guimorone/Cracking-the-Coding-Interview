@@ -10,7 +10,7 @@ int main() {
 
 /*                                      SOLUTION 1
 
-    Time Complexity => O(n) => Where "n" is the string length. The for loop just iterates
+    Time Complexity => O(n) => Where "n" is the string's length. The for loop just iterates
     through the string one time. (Depends on the "+=" or "append" complexity, if they are
     O(n) as well, then the time complexity will be O(n²))
 

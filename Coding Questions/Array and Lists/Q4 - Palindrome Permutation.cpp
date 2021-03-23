@@ -28,7 +28,7 @@ int main() {
 
 /*                                      SOLUTION 1
 
-    Time Complexity => O(n) => Where "n" is the string length.
+    Time Complexity => O(n) => Where "n" is the string's length.
     The for loop just iterates through "s".
     Roughly it would be: O(2n) == O(n).
 
@@ -39,10 +39,10 @@ int main() {
 
 
 /*  
-    If the string length is an even number, then the number of times 
+    If the string's length is an even number, then the number of times 
     each letter appears has to be even as well.
 
-    Else if the string length is an odd number, then it must have one, and just one,
+    Else if the string's length is an odd number, then it must have one, and just one,
     letter that appears in an odd number of times. 
     The number of times each of the remaining letters appears has to be even.
 */

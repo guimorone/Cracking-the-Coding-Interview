@@ -24,7 +24,7 @@ int main() {
 
 /*                                      SOLUTION 1
 
-    Time Complexity => O(n) => Where "n" is the string length.
+    Time Complexity => O(n) => Where "n" is the string's length.
     The for loop just iterates through "s".
 
     Space Complexity => O(n) => We've used the new string "newStr" to allocate
@@ -48,7 +48,7 @@ string URLify(string s, int n) {
 /*                                      SOLUTION 2
                                          in-place
 
-    Time Complexity => O(n) => Where "n" is the string length.
+    Time Complexity => O(n) => Where "n" is the string's length.
     The for loop just iterates through "s".
 
     Space Complexity => O(1) => No additional data structures used.
