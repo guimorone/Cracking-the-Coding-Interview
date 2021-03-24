@@ -1,6 +1,13 @@
-/*                                      SOLUTION 1
+/*                                      SOLUTION
 
-    
+    Time Complexity => O(n) => Where "n" is the number of elements in the given linked list. We just iterate
+    through the given linked list.
+
+    Space Complexity => O(n) => We create 2 additional linked lists that save the smallest and the biggest 
+    numbers. Both have, in total, length "n".
+
+    Resolution => Append the smallest numbers in the "before" list and the biggest in the "after" list. Then,
+    merge both linked lists.
 */
 
 using namespace std;
@@ -69,8 +76,46 @@ void removeLastElement(linkedList *list) {
     list->length--;
 }
 
+void clear(linkedList *list) {
+    while(list->length > 0) {
+        removeLastElement(list);
+    }
+}
+
 void partition(linkedList *list, int val) { // val == partition.
-    ...
+    linkedList *before = createLinkedList(), *after = createLinkedList();
+    node *curr = list->head;
+    while(curr != NULL) {
+        if(curr->element < val) append(before, curr->element);
+        else append(after, curr->element);
+        curr = curr->next;
+    }
+    delete curr;
+    clear(list);
+
+    /* node *n = before->head;
+    while(n != NULL) {
+        append(list, n->element);
+        n = n->next;
+    }
+    n = after->head;
+    while(n != NULL) {
+        append(list, n->element);
+        n = n->next;
+    }
+    delete n; */
+
+    list->head = list->tail = createNode2();
+    list->head = before->head;
+    list->tail = before->tail;
+    list->tail->next = after->head;
+    list->tail = after->tail;
+    
+    clear(before);
+    delete before;
+    clear(after);
+    delete after;
+
 }
 
 int main() {
@@ -92,6 +137,6 @@ int main() {
         removeLastElement(list);
     }
 
-    delete(list);
+    delete list;
     return 0;
 }
